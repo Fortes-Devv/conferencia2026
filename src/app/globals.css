@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-banner-gradient text-brand-ink font-body antialiased;
+}
+
+/* Faixa de título com corte diagonal na ponta direita (como no banner) */
+.section-banner {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 22px) 100%, 0 100%);
+}
+
+/* Animações do hero */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(0.7); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 90s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slow 140s linear infinite reverse;
+}
+
+.animate-twinkle {
+  animation: twinkle 2.6s ease-in-out infinite;
+}
+
+.animate-twinkle-delayed {
+  animation: twinkle 2.6s ease-in-out 1.3s infinite;
+}
