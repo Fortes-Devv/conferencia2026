@@ -29,6 +29,7 @@ const SPONSORS: Sponsor[] = [
   { src: "/assets/dinapontes.webp", alt: "Dina Pontes" },
   { src: "/assets/pontesfoodsclub.webp", alt: "Pontes Foods Club" },
   { src: "/assets/elvislisboa.webp", alt: "Elvis Lisboa" },
+  { src: "/assets/sublimais.webp", alt: "Sublimais" },
 ];
 
 function LogoCard({ sponsor }: { sponsor: Sponsor }) {
