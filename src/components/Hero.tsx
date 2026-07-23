@@ -76,7 +76,7 @@ export default function Hero() {
           className="z-0 animate-spin-slower opacity-90"
         />
         <Layer
-          src="/assets/sun-solid.webp"
+          src="/assets/sol-laranja.webp"
           x={572}
           y={-872}
           w={2525}
@@ -252,7 +252,7 @@ export default function Hero() {
         {/* sol laranja — metade escondida na borda direita */}
         <div className="pointer-events-none absolute right-0 top-[34%] z-[1] -translate-y-1/2 translate-x-1/2">
           <Image
-            src="/assets/sun-solid.webp"
+            src="/assets/sol-laranja.webp"
             alt=""
             width={2525}
             height={2526}

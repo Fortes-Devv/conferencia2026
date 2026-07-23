@@ -10,28 +10,20 @@ export type ScheduleDayProps = {
 };
 
 export default function ScheduleDay({ day, periods, isLast }: ScheduleDayProps) {
-  const [first, ...rest] = periods;
-
   return (
     <div
       data-aos="fade-up"
       className={`py-7 ${isLast ? "" : "border-b border-brand-ink/60"}`}
     >
-      <div className="grid gap-6 sm:grid-cols-3">
-        <div>
-          <h3 className="font-display text-2xl font-semibold uppercase tracking-wide text-brand-ink sm:text-[1.7rem]">
-            {day}
-          </h3>
-          {first && (
-            <div className="mt-1">
-              <PeriodBlock period={first} />
-            </div>
-          )}
-        </div>
-        {rest.map((period) => (
-          <div key={period.label} className="sm:pt-1">
-            <PeriodBlock period={period} />
-          </div>
+      {/* Nome do dia isolado, em linha própria */}
+      <h3 className="font-display text-2xl font-semibold uppercase tracking-wide text-brand-ink sm:text-[1.7rem]">
+        {day}
+      </h3>
+
+      {/* Períodos alinhados lado a lado, todos na mesma altura */}
+      <div className="mt-4 grid gap-6 sm:grid-cols-3">
+        {periods.map((period) => (
+          <PeriodBlock key={period.label} period={period} />
         ))}
       </div>
     </div>
