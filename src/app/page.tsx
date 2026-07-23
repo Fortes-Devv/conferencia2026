@@ -6,7 +6,7 @@ const schedule: Omit<ScheduleDayProps, "isLast">[] = [
   {
     day: "Sexta-feira – 24/Jul",
     periods: [
-      { label: "Tarde", items: ["12h00 - Boas Vindas", "17h00 - Café"] },
+      { label: "Tarde", items: ["14h00 - Boas Vindas", "17h00 - Café"] },
       { label: "Noite", items: ["18h59 - Abertura Oficial", "21h00 - Jantar"] },
     ],
   },
