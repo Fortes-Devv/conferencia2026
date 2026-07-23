@@ -58,7 +58,7 @@ export default function Hero() {
       >
         {/* Fundo (céu azul-marinho → laranja) */}
         <Image
-          src="/assets/header-bg.jpg"
+          src="/assets/header-bg.webp"
           alt=""
           fill
           priority
@@ -68,7 +68,7 @@ export default function Hero() {
 
         {/* Grafismos de fundo (efeitos) — sempre atrás dos participantes */}
         <Layer
-          src="/assets/sun-outline.png"
+          src="/assets/sun-outline.webp"
           x={-103}
           y={-640}
           w={2398}
@@ -76,7 +76,7 @@ export default function Hero() {
           className="z-0 animate-spin-slower opacity-90"
         />
         <Layer
-          src="/assets/sun-solid.png"
+          src="/assets/sun-solid.webp"
           x={572}
           y={-872}
           w={2525}
@@ -95,7 +95,7 @@ export default function Hero() {
 
         {/* Bloco da esquerda: #NOVODENOVO + ícones */}
         <Layer
-          src="/assets/hash-novodenovo.png"
+          src="/assets/hash-novodenovo.webp"
           alt="#NovoDeNovo"
           x={164}
           y={237}
@@ -106,7 +106,7 @@ export default function Hero() {
           aosDelay={200}
         />
         <Layer
-          src="/assets/icons-cream.png"
+          src="/assets/icons-cream.webp"
           x={163}
           y={464}
           w={217}
@@ -116,7 +116,7 @@ export default function Hero() {
           aosDelay={350}
         />
         <Layer
-          src="/assets/arrows-cream.png"
+          src="/assets/arrows-cream.webp"
           x={163}
           y={541}
           w={82}
@@ -162,7 +162,7 @@ export default function Hero() {
 
         {/* Lettering "CONFEM 2026 — Novo de Deus" */}
         <Layer
-          src="/assets/confem-2026.png"
+          src="/assets/confem-2026.webp"
           alt="CONFEM 2026"
           x={1651}
           y={80}
@@ -173,7 +173,7 @@ export default function Hero() {
           aosDelay={200}
         />
         <Layer
-          src="/assets/novo.png"
+          src="/assets/novo.webp"
           alt="Novo"
           x={1576}
           y={125}
@@ -184,7 +184,7 @@ export default function Hero() {
           aosDelay={300}
         />
         <Layer
-          src="/assets/de.png"
+          src="/assets/de.webp"
           alt="de"
           x={1479}
           y={361}
@@ -195,7 +195,7 @@ export default function Hero() {
           aosDelay={450}
         />
         <Layer
-          src="/assets/deus.png"
+          src="/assets/deus.webp"
           alt="Deus"
           x={1569}
           y={273}
@@ -206,7 +206,7 @@ export default function Hero() {
           aosDelay={550}
         />
         <Layer
-          src="/assets/bem-vindo.png"
+          src="/assets/bem-vindo.webp"
           alt="Bem-vindo(a)"
           x={1672}
           y={538}
@@ -219,7 +219,7 @@ export default function Hero() {
 
         {/* Sparkles (efeito) — afastados das fotos, sobre o lettering */}
         <Layer
-          src="/assets/sparkle-1.png"
+          src="/assets/sparkle-1.webp"
           x={1505}
           y={270}
           w={85}
@@ -227,7 +227,7 @@ export default function Hero() {
           className="z-50 animate-twinkle"
         />
         <Layer
-          src="/assets/sparkle-2.png"
+          src="/assets/sparkle-2.webp"
           x={2191}
           y={163}
           w={86}
@@ -238,9 +238,9 @@ export default function Hero() {
 
       {/* ===================== MOBILE (< md) — story vertical ===================== */}
       <div className="relative flex min-h-[600px] flex-col items-center overflow-hidden bg-brand-navy md:hidden">
-        {/* Fundo: header-bg.jpg (cover, centralizado) — só o degradê */}
+        {/* Fundo: header-bg.webp (cover, centralizado) — só o degradê */}
         <Image
-          src="/assets/header-bg.jpg"
+          src="/assets/header-bg.webp"
           alt=""
           fill
           priority
@@ -252,7 +252,7 @@ export default function Hero() {
         {/* sol laranja — metade escondida na borda direita */}
         <div className="pointer-events-none absolute right-0 top-[34%] z-[1] -translate-y-1/2 translate-x-1/2">
           <Image
-            src="/assets/sun-solid.png"
+            src="/assets/sun-solid.webp"
             alt=""
             width={2525}
             height={2526}
@@ -262,7 +262,7 @@ export default function Hero() {
         {/* sol de contorno branco — centralizado na altura */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
           <Image
-            src="/assets/sun-outline.png"
+            src="/assets/sun-outline.webp"
             alt=""
             width={2398}
             height={2398}
@@ -273,7 +273,7 @@ export default function Hero() {
         {/* Título — mesmo arranjo do desktop (canvas 2362x668):
             grupo x[1479..2277] w=798, y[80..627] h=547. Reduzido e puxado
             pro canto superior direito; #NovoDeNovo no canto esquerdo. */}
-        <div className="relative z-30 w-full px-4 pt-6" data-aos="fade-down">
+        <div className="relative z-30 w-full px-4 pt-6">
           <div
             className="relative mx-auto w-full max-w-[460px]"
             style={{ aspectRatio: "798 / 547" }}
@@ -281,9 +281,11 @@ export default function Hero() {
             <div
               className="absolute"
               style={{ left: "21.554%", top: "0%", width: "55.138%" }}
+              data-aos="fade-down"
+              data-aos-delay={200}
             >
               <Image
-                src="/assets/confem-2026.png"
+                src="/assets/confem-2026.webp"
                 alt="CONFEM 2026"
                 width={440}
                 height={30}
@@ -293,9 +295,11 @@ export default function Hero() {
             <div
               className="absolute"
               style={{ left: "12.155%", top: "8.227%", width: "76.441%" }}
+              data-aos="zoom-in"
+              data-aos-delay={300}
             >
               <Image
-                src="/assets/novo.png"
+                src="/assets/novo.webp"
                 alt="Novo"
                 width={610}
                 height={223}
@@ -305,9 +309,11 @@ export default function Hero() {
             <div
               className="absolute"
               style={{ left: "0%", top: "51.371%", width: "13.534%" }}
+              data-aos="zoom-in"
+              data-aos-delay={450}
             >
               <Image
-                src="/assets/de.png"
+                src="/assets/de.webp"
                 alt="de"
                 width={108}
                 height={146}
@@ -317,9 +323,11 @@ export default function Hero() {
             <div
               className="absolute"
               style={{ left: "11.278%", top: "35.283%", width: "88.722%" }}
+              data-aos="zoom-in"
+              data-aos-delay={550}
             >
               <Image
-                src="/assets/deus.png"
+                src="/assets/deus.webp"
                 alt="Deus"
                 width={708}
                 height={243}
@@ -329,9 +337,11 @@ export default function Hero() {
             <div
               className="absolute"
               style={{ left: "24.185%", top: "83.729%", width: "55.388%" }}
+              data-aos="fade-up"
+              data-aos-delay={700}
             >
               <Image
-                src="/assets/bem-vindo.png"
+                src="/assets/bem-vindo.webp"
                 alt="Bem-vindo(a)"
                 width={442}
                 height={89}
@@ -343,19 +353,23 @@ export default function Hero() {
           {/* Ícones + setas */}
           <div className="mt-4 flex items-center justify-center gap-3">
             <Image
-              src="/assets/icons-cream.png"
+              src="/assets/icons-cream.webp"
               alt=""
               width={217}
               height={56}
               className="h-6 w-auto"
+              data-aos="fade-right"
+              data-aos-delay={350}
             />
             <span className="h-px w-5 bg-brand-cream/60" />
             <Image
-              src="/assets/arrows-cream.png"
+              src="/assets/arrows-cream.webp"
               alt=""
               width={82}
               height={82}
               className="h-6 w-auto"
+              data-aos="fade-right"
+              data-aos-delay={500}
             />
           </div>
 
@@ -367,12 +381,13 @@ export default function Hero() {
         <div
           className="relative z-20 mt-auto w-full overflow-hidden"
           style={{ aspectRatio: "1083 / 584" }}
-          data-aos="fade-up"
         >
           {/* right (fundo) */}
           <div
             className="absolute z-10"
             style={{ left: "53.925%", top: "0.342%", width: "46.077%" }}
+            data-aos="fade-up"
+            data-aos-delay={300}
           >
             <Image
               src="/assets/pastor-right-solid.webp"
@@ -386,6 +401,8 @@ export default function Hero() {
           <div
             className="absolute z-20"
             style={{ left: "0%", top: "6.336%", width: "48.569%" }}
+            data-aos="fade-up"
+            data-aos-delay={150}
           >
             <Image
               src="/assets/pastor-left-solid.webp"
@@ -399,6 +416,7 @@ export default function Hero() {
           <div
             className="absolute z-30"
             style={{ left: "25.947%", top: "0%", width: "55.956%" }}
+            data-aos="fade-up"
           >
             <Image
               src="/assets/pastor-center-solid.webp"
@@ -412,14 +430,14 @@ export default function Hero() {
 
         {/* Estrelas (mesmo estilo do desktop, tamanho proporcional à altura) */}
         <Image
-          src="/assets/sparkle-2.png"
+          src="/assets/sparkle-2.webp"
           alt=""
           width={86}
           height={82}
           className="absolute right-[11%] top-[13%] z-40 h-[3.4vh] w-auto animate-twinkle"
         />
         <Image
-          src="/assets/sparkle-1.png"
+          src="/assets/sparkle-1.webp"
           alt=""
           width={85}
           height={84}

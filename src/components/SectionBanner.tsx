@@ -23,14 +23,14 @@ export default function SectionBanner({
       </div>
       <div className="flex shrink-0 items-center gap-3">
         <Image
-          src={`/assets/icons-${suffix}.png`}
+          src={`/assets/icons-${suffix}.webp`}
           alt=""
           width={217}
           height={56}
           className="h-7 w-auto"
         />
         <Image
-          src={`/assets/arrows-${suffix}.png`}
+          src={`/assets/arrows-${suffix}.webp`}
           alt=""
           width={57}
           height={57}
