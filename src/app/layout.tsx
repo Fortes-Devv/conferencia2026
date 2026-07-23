@@ -17,7 +17,7 @@ const arimo = Arimo({
 });
 
 export const metadata: Metadata = {
-  title: "CONFEM 2026 — Novo de Deus | Programação",
+  title: "CONFEM 2026 Novo de Deus | Programação",
   description:
     "Programação oficial da CONFEM 2026 — Novo de Deus. Bem-vindo(a), família MIPAM! #NovoDeNovo",
 };
