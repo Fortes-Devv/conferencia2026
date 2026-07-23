@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import SectionBanner from "@/components/SectionBanner";
 import ScheduleDay, { ScheduleDayProps } from "@/components/ScheduleDay";
+import SponsorsCarousel from "@/components/SponsorsCarousel";
 
 const schedule: Omit<ScheduleDayProps, "isLast">[] = [
   {
@@ -342,6 +343,9 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* PATROCINADORES — carrossel full-width no lugar do footer */}
+      <SponsorsCarousel />
     </main>
   );
 }

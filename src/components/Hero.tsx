@@ -116,7 +116,7 @@ export default function Hero() {
           aosDelay={350}
         />
         <Layer
-          src="/assets/arrows-cream.webp"
+          src="/assets/arrows-cream-bege.webp"
           x={163}
           y={541}
           w={82}
@@ -363,7 +363,7 @@ export default function Hero() {
             />
             <span className="h-px w-5 bg-brand-cream/60" />
             <Image
-              src="/assets/arrows-cream.webp"
+              src="/assets/arrows-cream-bege.webp"
               alt=""
               width={82}
               height={82}

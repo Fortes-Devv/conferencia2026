@@ -10,7 +10,8 @@ export default function SectionBanner({
   color = "orange",
 }: SectionBannerProps) {
   const bg = color === "orange" ? "bg-brand-orange" : "bg-brand-brown";
-  const suffix = color === "orange" ? "orange" : "brown";
+  // Ícones acompanham a paleta do título (laranja ou marrom)
+  const suffix = color === "orange" ? "orange-solid" : "brown-solid";
 
   return (
     <div className="flex items-center gap-4">
