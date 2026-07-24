@@ -34,14 +34,14 @@ const SPONSORS: Sponsor[] = [
 
 function LogoCard({ sponsor }: { sponsor: Sponsor }) {
   return (
-    <li className="relative h-20 w-40 shrink-0 select-none sm:h-24 sm:w-52">
+    <li className="relative h-28 w-56 shrink-0 select-none sm:h-28 sm:w-60">
       <Image
         src={sponsor.src}
         alt={sponsor.alt}
         fill
         draggable={false}
-        sizes="(min-width: 640px) 208px, 160px"
-        className="pointer-events-none object-contain p-4 sm:p-5"
+        sizes="(min-width: 640px) 240px, 224px"
+        className="pointer-events-none object-contain p-3 sm:p-5"
       />
     </li>
   );
